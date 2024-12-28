@@ -1,0 +1,13 @@
+<p>Count : {{clickCount}}</p>
+
+<button  (click)="onSave()">Click me</button>
+
+<h1>ng For</h1>
+
+<ul>
+  <li *ngFor="let movie of movies;let isEven=even;let isOdd=odd" [ngClass]="{'even-items':isEven,'odd-items':isOdd}">{{movie}}</li>
+
+</ul>
+
+
+
