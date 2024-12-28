@@ -1,0 +1,14 @@
+<h4>From Car List Component</h4>
+<ul>
+    @if(carNames.length>0){
+        <ul>
+            <li *ngFor="let car of carNames">
+              {{car}}
+            </li>
+        </ul>
+    }
+    @else{
+        <p>No Cars Available</p>
+    }
+  
+</ul>
