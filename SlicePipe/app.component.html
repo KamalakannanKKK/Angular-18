@@ -1,0 +1,7 @@
+<h3>Without Slice: {{sliceContent}}</h3>
+<h3>With Slice: {{sliceContent | slice:6:35}}</h3>
+
+<h3>Items</h3>
+<ul>
+  <li *ngFor="let item of items | slice:0:2">{{item}}</li>
+</ul>
